@@ -86,12 +86,7 @@
                     <dd>{$object->getObjectDescriptor()} (ID: {$object->objectID})</dd>
                 </dl>
 
-                <dl>
-                    <dt></dt>
-                    <dd><strong>The following changes have been made:</strong></dd>
-                </dl>
-
-                {include file='__acpEditLog.'|concat:$object->getClassDescriptor() type=$object->type changes=$object->changes}
+                {include file='__acpEditLog.'|concat:$object->getClassDescriptor() editedObject=$object->getEditedObject() type=$object->type changes=$object->changes}
             </fieldset>
         </div>
     {/foreach}

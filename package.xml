@@ -5,7 +5,7 @@
         <packagename language="en"><![CDATA[ACP Edit Log]]></packagename>
         <packagedescription language="de">Dieses Plugin loggt Änderungen an Benutzerprofilen. Ebenfalls beinhaltet es eine API um zusätzliche loggbare Felder und Formulare hinzuzufügen.</packagedescription>
         <packagedescription language="en">Logs changes made to user profiles. It includes an API to add additional trackable fields and forms.</packagedescription>
-        <version>1.0.0</version>
+        <version>1.0.1</version>
         <date>2017-02-04</date>
     </packageinformation>
 

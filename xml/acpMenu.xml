@@ -3,7 +3,7 @@
 	<import>
 
 		<acpmenuitem name="wcf.acp.menu.link.log.acpedit">
-			<controller><![CDATA[wcf\acp\page\ACPEditLogListPage]]></controller>
+			<controller><![CDATA[wcf\acp\page\ACPEditLogViewPage]]></controller>
 			<parent>wcf.acp.menu.link.log</parent>
 			<permissions>admin.system.canViewACPEditLog</permissions>
 			<showorder>6</showorder>

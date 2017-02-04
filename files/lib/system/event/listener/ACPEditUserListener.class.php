@@ -2,15 +2,10 @@
 
 use wcf\acp\form\UserEditForm;
 use wcf\data\acp\editlog\ACPEditLogHandler;
-use wcf\data\acp\session\access\log\ACPSessionAccessLogEditor;
-use wcf\data\acp\session\log\ACPSessionLog;
-use wcf\data\acp\session\log\ACPSessionLogEditor;
 use wcf\data\user\group\UserGroup;
-use wcf\data\user\option\UserOption;
 use wcf\data\user\option\UserOptionList;
 use wcf\data\user\User;
 use wcf\system\WCF;
-use wcf\util\UserUtil;
 
 class ACPEditUserListener implements IParameterizedEventListener
 {
@@ -24,8 +19,6 @@ class ACPEditUserListener implements IParameterizedEventListener
      */
     public function execute($eventObj, $className, $eventName, array &$parameters)
     {
-        if (WCF::getUser()->userID != 3006) return;
-
         /* @var $user User */
         $user = $eventObj->user->getDecoratedObject();
         $this->getChanges($eventObj, $user, $changes);

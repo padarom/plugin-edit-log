@@ -33,7 +33,6 @@
         <item name="wcf.acp.editlog.title.delete"><![CDATA[{$object->getUsername()} deleted {$type} #{$object->objectID}]]></item>
 
         <item name="wcf.acp.editlog.descriptor.wcf.data.user.user">User</item>
-        <item name="wcf.acp.editlog.changes.wcf.data.user.user"><![CDATA[{include file='__acpEditLog_user'}]]></item>
         <item name="wcf.acp.editlog.title.wcf.data.user.user.create"><![CDATA[{$object->getUsername()} created the user {$object->getEditedObject()->username}]]></item>
         <item name="wcf.acp.editlog.title.wcf.data.user.user.edit"><![CDATA[{$object->getUsername()} edited the user {$object->getEditedObject()->username}]]></item>
         <item name="wcf.acp.editlog.title.wcf.data.user.user.delete"><![CDATA[{$object->getUsername()} deleted a user]]></item>

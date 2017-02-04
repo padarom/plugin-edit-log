@@ -1,3 +1,8 @@
+<dl>
+    <dt></dt>
+    <dd><strong>The following changes have been made:</strong></dd>
+</dl>
+
 {if $type == 'edit'}
     {foreach from=$changes item='change' key='name'}
         {if $name == 'options'}
