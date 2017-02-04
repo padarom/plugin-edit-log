@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/language.xsd" languagecode="en" languagename="English" countrycode="gb">
+    <category name="wcf.acp.option">
+        <item name="wcf.acp.option.category.security.general.acplog">ACP Edit Log</item>
+        <item name="wcf.acp.option.acp_edit_log_prune_after_days">Prune Log Entries</item>
+        <item name="wcf.acp.option.acp_edit_log_prune_after_days.description">Log entries will be removed after the following days. Raising the limit will provide a longer history, but at the expense of increased database storage usage.</item>
+    </category>
+
+    <category name="wcf.acp.group">
+        <item name="wcf.acp.group.option.admin.system.canViewACPEditLog">Can view the ACP edit log</item>
+    </category>
+
+    <category name="wcf.acp.menu">
+        <item name="wcf.acp.menu.link.log.acpedit">ACP Edit Log</item>
+    </category>
+
+    <category name="wcf.acp">
+        <item name="wcf.acp.acpEditLog">ACP Edit Log</item>
+    </category>
+
+    <category name="wcf.acp.editlog">
+        <item name="wcf.acp.editlog.username.description">The name of the user that performed the changes.</item>
+        <item name="wcf.acp.editlog.date">Logged Date</item>
+        <item name="wcf.acp.editlog.time">Logged Time</item>
+        <item name="wcf.acp.editlog.edited">Edited Object</item>
+        <item name="wcf.acp.editlog.type">Type of edited object</item>
+
+        <item name="wcf.acp.editlog.addedToUsergroup">Added to User Group</item>
+        <item name="wcf.acp.editlog.removedFromUsergroup">Removed from User Group</item>
+
+        <item name="wcf.acp.editlog.title.create"><![CDATA[{$object->getUsername()} created {$type} #{$object->objectID}]]></item>
+        <item name="wcf.acp.editlog.title.edit"><![CDATA[{$object->getUsername()} edited {$type} #{$object->objectID}]]></item>
+        <item name="wcf.acp.editlog.title.delete"><![CDATA[{$object->getUsername()} deleted {$type} #{$object->objectID}]]></item>
+
+        <item name="wcf.acp.editlog.descriptor.wcf.data.user.user">User</item>
+        <item name="wcf.acp.editlog.changes.wcf.data.user.user"><![CDATA[{include file='__acpEditLog_user'}]]></item>
+        <item name="wcf.acp.editlog.title.wcf.data.user.user.create"><![CDATA[{$object->getUsername()} created the user {$object->getEditedObject()->username}]]></item>
+        <item name="wcf.acp.editlog.title.wcf.data.user.user.edit"><![CDATA[{$object->getUsername()} edited the user {$object->getEditedObject()->username}]]></item>
+        <item name="wcf.acp.editlog.title.wcf.data.user.user.delete"><![CDATA[{$object->getUsername()} deleted a user]]></item>
+    </category>
+
+</language>

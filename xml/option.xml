@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="https://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.woltlab.com https://www.woltlab.com/XSD/maelstrom/option.xsd">
+	<import>
+		<categories>
+			<category name="security.general.acplog">
+				<parent>security.general</parent>
+			</category>
+		</categories>
+
+		<options>
+			<option name="acp_edit_log_prune_after_days">
+				<categoryname>security.general.acplog</categoryname>
+				<optiontype>integer</optiontype>
+				<defaultvalue>30</defaultvalue>
+			</option>
+		</options>
+	</import>
+</data>

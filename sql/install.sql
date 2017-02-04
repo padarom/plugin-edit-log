@@ -1,0 +1,18 @@
+DROP TABLE IF EXISTS wcf1_user_edit_log;
+
+CREATE TABLE wcf1_acp_edit_log (
+	logID INT(10) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	userID INT(10) NOT NULL,
+	username VARCHAR(55),
+	objectID INT(10) NOT NULL,
+	objectClass VARCHAR(255) NOT NULL,
+	type VARCHAR(255) NOT NULL,
+	changes TEXT,
+	time TIMESTAMP NOT NULL
+);
+
+ALTER TABLE wcf1_acp_edit_log
+		ADD FOREIGN KEY (userID)
+		REFERENCES wcf1_user (userID)
+			ON UPDATE CASCADE
+			ON DELETE SET NULL;
